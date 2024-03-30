@@ -1,12 +1,17 @@
 #ifndef RECCHECK
 //if you want to add any #includes like <iostream> you must do them here (before the next endif)
+<<<<<<< HEAD
 #include <utility> 
 #include <algorithm>
+=======
+
+>>>>>>> 63b6c558d86310b9152efd250b57bb68e055ebba
 #endif
 
 #include "equal-paths.h"
 using namespace std;
 
+<<<<<<< HEAD
 // Helper function to check if all paths are of equal length
 std::pair<bool, int> checkEqualPaths(Node *node) {
     if (!node) return {true, 0};
@@ -32,11 +37,22 @@ std::pair<bool, int> checkEqualPaths(Node *node) {
 
     return {isBalanced, depth};
 }
+=======
+
+// You may add any prototypes of helper functions here
+>>>>>>> 63b6c558d86310b9152efd250b57bb68e055ebba
 
 
 bool equalPaths(Node * root)
 {
+<<<<<<< HEAD
     if (!root) return true; // An empty tree has equal paths by definition
     auto result = checkEqualPaths(root);
     return result.first;
 }
+=======
+    // Add your code below
+
+}
+
+>>>>>>> 63b6c558d86310b9152efd250b57bb68e055ebba
