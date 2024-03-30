@@ -135,19 +135,12 @@ public:
     virtual void remove(const Key& key);  // TODO
 protected:
     virtual void nodeSwap( AVLNode<Key,Value>* n1, AVLNode<Key,Value>* n2);
-<<<<<<< HEAD
     
     // Add helper functions here
     void updatePathBalance(AVLNode<Key, Value>* node);
     int calculateBalanceFactor(AVLNode<Key, Value>* node);
     AVLNode<Key, Value>* leftRotate(AVLNode<Key, Value>* x);
     AVLNode<Key, Value>* rightRotate(AVLNode<Key, Value>* x);
-=======
-
-    // Add helper functions here
-
-
->>>>>>> 63b6c558d86310b9152efd250b57bb68e055ebba
 };
 
 /*
@@ -155,7 +148,6 @@ protected:
  * overwrite the current value with the updated value.
  */
 template<class Key, class Value>
-<<<<<<< HEAD
 void AVLTree<Key, Value>::insert(const std::pair<const Key, Value>& new_item) {
     this->BinarySearchTree<Key, Value>::insert(new_item);
 
@@ -164,11 +156,6 @@ void AVLTree<Key, Value>::insert(const std::pair<const Key, Value>& new_item) {
 
     // Update balance factors from this node upwards.
     this->updatePathBalance(insertedNode);
-=======
-void AVLTree<Key, Value>::insert (const std::pair<const Key, Value> &new_item)
-{
-    // TODO
->>>>>>> 63b6c558d86310b9152efd250b57bb68e055ebba
 }
 
 /*
@@ -176,7 +163,6 @@ void AVLTree<Key, Value>::insert (const std::pair<const Key, Value> &new_item)
  * should swap with the predecessor and then remove.
  */
 template<class Key, class Value>
-<<<<<<< HEAD
 void AVLTree<Key, Value>::remove(const Key& key) {
     // Standard BST removal but keep track of the parent for rebalancing
     AVLNode<Key, Value>* nodeToRemove = static_cast<AVLNode<Key, Value>*>(this->BinarySearchTree<Key, Value>::internalFind(key));
@@ -276,14 +262,6 @@ AVLNode<Key, Value>* AVLTree<Key, Value>::rightRotate(AVLNode<Key, Value>* y) {
 
 
 template<class Key, class Value>
-=======
-void AVLTree<Key, Value>:: remove(const Key& key)
-{
-    // TODO
-}
-
-template<class Key, class Value>
->>>>>>> 63b6c558d86310b9152efd250b57bb68e055ebba
 void AVLTree<Key, Value>::nodeSwap( AVLNode<Key,Value>* n1, AVLNode<Key,Value>* n2)
 {
     BinarySearchTree<Key, Value>::nodeSwap(n1, n2);
@@ -293,8 +271,4 @@ void AVLTree<Key, Value>::nodeSwap( AVLNode<Key,Value>* n1, AVLNode<Key,Value>* 
 }
 
 
-<<<<<<< HEAD
 #endif
-=======
-#endif
->>>>>>> 63b6c558d86310b9152efd250b57bb68e055ebba
